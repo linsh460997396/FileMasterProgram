@@ -634,8 +634,8 @@ namespace FileMaster
             workErrCount = 0;//重置错误计数
             UserOpEnable(true);//重置用户操作状态
             button2.Text = "执行";
-            sWork.Dispose();
-            if (comboBox1.SelectedIndex !=0) { sReport.Dispose(); }
+            if (sWork != null) { sWork.Dispose(); }
+            if (comboBox1.SelectedIndex !=0 && sReport != null) { sReport.Dispose(); }
         }
 
         /// <summary>

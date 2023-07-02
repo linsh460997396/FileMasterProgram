@@ -1117,7 +1117,7 @@ namespace FileMaster
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
-            this.Text = "仓鼠文件处理程序v0.19 测试版（作者邮箱：1123136054@qq.com）";
+            this.Text = "仓鼠文件处理程序v0.20 测试版（作者邮箱：1123136054@qq.com）";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
