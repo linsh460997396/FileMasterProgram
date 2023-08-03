@@ -32,7 +32,3 @@ D:\VSWork\2019\Lib_MMProgram\FileMaster\bin\Debug\Lib_MMCore.dll
 D:\VSWork\2019\Lib_MMProgram\FileMaster\bin\Debug\Lib_MMCore.pdb
 D:\VSWork\2019\Lib_MMProgram\FileMaster\bin\Debug\Lib_MMCore.dll.config
 D:\VSWork\2019\Lib_MMProgram\FileMaster\obj\Debug\FileMaster.csproj.CopyComplete
-D:\VSWork\2019\FileMasterProgram\FileMaster\bin\Debug\Lib_MMCore.dll
-D:\VSWork\2019\FileMasterProgram\FileMaster\bin\Debug\Lib_MMCore.pdb
-D:\VSWork\2019\FileMasterProgram\FileMaster\bin\Debug\Lib_MMCore.dll.config
-D:\VSWork\2019\FileMasterProgram\FileMaster\obj\Debug\FileMaster.csproj.CopyComplete

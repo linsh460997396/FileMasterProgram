@@ -16,11 +16,11 @@ namespace FileMaster
         private static bool _workStatus = false;
         private static bool _workStop = false;
         private static int _workErrCount = 0;
-        private static int _startIndex; 
-        private static int _strCount; 
+        private static int _startIndex;
+        private static int _strCount;
         private static int _dirCount = 0;
         private static int _proCount;
-        private static int _proCountMax; 
+        private static int _proCountMax;
         private static Thread _workThread;
         private static bool _userOpEnable = true;
 
@@ -321,6 +321,7 @@ namespace FileMaster
             WorkErrCount = 0;//重置错误计数
             UserOpEnableChange(true);//重置用户操作状态
             button_run.Text = "执行";
+            WorkThread.Abort();
         }
 
         /// <summary>
@@ -2619,14 +2620,17 @@ namespace FileMaster
                 {
                     UserOpEnableChange(false);
                 }
-                else { break; }
+                else
+                {
+                    label_dirStatistics.Text = "工作目录错误！（若目录名正确，可反馈至作者邮箱）";
+                    break;
+                }
                 if (button_run.Text == "执行" && WorkStatus == false)
                 {
                     WorkStatus = true;
                     button_run.Text = "取消";
                     WorkThread = new Thread(ButtonRun) { IsBackground = true };
                     WorkThread.Start();
-
                 }
                 else if (button_run.Text == "取消" && WorkStatus == true)
                 {

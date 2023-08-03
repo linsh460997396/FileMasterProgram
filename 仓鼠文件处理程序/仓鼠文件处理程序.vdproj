@@ -15,14 +15,20 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_034FD581C4B94663B7C2D91F7BD53BA5"
+        "MsmKey" = "8:_A723D57EB0503D327C138DCC8E5F25EB"
+        "OwnerKey" = "8:_BCD15A12CBA844A4BF529C5979E8854D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BCD15A12CBA844A4BF529C5979E8854D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_C23D7699410E040A25A5793CAA3B85EC"
-        "OwnerKey" = "8:_034FD581C4B94663B7C2D91F7BD53BA5"
+        "OwnerKey" = "8:_BCD15A12CBA844A4BF529C5979E8854D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -34,7 +40,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_034FD581C4B94663B7C2D91F7BD53BA5"
+        "OwnerKey" = "8:_BCD15A12CBA844A4BF529C5979E8854D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A723D57EB0503D327C138DCC8E5F25EB"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +67,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -71,6 +91,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -100,6 +128,37 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A723D57EB0503D327C138DCC8E5F25EB"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Lib_MMCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_A723D57EB0503D327C138DCC8E5F25EB"
+                    {
+                    "Name" = "8:Lib_MMCore.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Lib_MMCore.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_61CE45677B3F45229185960996B10BB7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C23D7699410E040A25A5793CAA3B85EC"
             {
             "AssemblyRegister" = "3:1"
@@ -308,7 +367,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2F0E9FE429C24EDFB300087D3522D56B"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BC95E899DE59429CB685ADD6BEF7AC3B"
             {
             "Name" = "8:仓鼠文件处理程序"
             "Arguments" = "8:"
@@ -316,7 +375,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_034FD581C4B94663B7C2D91F7BD53BA5"
+            "Target" = "8:_BCD15A12CBA844A4BF529C5979E8854D"
             "Folder" = "8:_831603F0982D461E8146830E52062D75"
             "WorkingFolder" = "8:_61CE45677B3F45229185960996B10BB7"
             "Icon" = "8:"
@@ -721,7 +780,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_034FD581C4B94663B7C2D91F7BD53BA5"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BCD15A12CBA844A4BF529C5979E8854D"
             {
             "SourcePath" = "8:..\\FileMaster\\obj\\Debug\\FileMaster.exe"
             "TargetName" = "8:"
