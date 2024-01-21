@@ -321,7 +321,7 @@ namespace FileMaster
             WorkErrCount = 0;//重置错误计数
             UserOpEnableChange(true);//重置用户操作状态
             button_run.Text = "执行";
-            WorkThread.Abort();
+            //WorkThread.Abort();
         }
 
         /// <summary>
@@ -2951,12 +2951,13 @@ namespace FileMaster
         }
 
         /// <summary>
-        /// 取消跨线程的访问，自动运行
+        /// 取消线程间的安全访问
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
+            // 取消线程间的安全访问（最简单省事，但最不负责）
             CheckForIllegalCrossThreadCalls = false;
         }
 
